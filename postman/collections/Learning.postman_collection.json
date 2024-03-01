@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "c5b46db9-5ddf-4100-a468-6cc194a6b538",
+		"name": "Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fakerestapi",
+			"item": [
+				{
+					"name": "Get  all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities/1",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Activities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities/1",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Activities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 400,\n    \"title\": \"Harry potter\",\n    \"dueDate\": \"2024-10-08T09:52:04.572Z\",\n    \"completed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://fakerestapi.azurewebsites.net/api/v1/Activities/",
+							"protocol": "https",
+							"host": [
+								"fakerestapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"v1",
+								"Activities",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "xkcd",
+			"item": [
+				{
+					"name": "Get start",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://xkcd.com/1906/",
+							"protocol": "https",
+							"host": [
+								"xkcd",
+								"com"
+							],
+							"path": [
+								"1906",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get start accept header",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://xkcd.com/1906/",
+							"protocol": "https",
+							"host": [
+								"xkcd",
+								"com"
+							],
+							"path": [
+								"1906",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://imgs.xkcd.com/comics/making_progress.png",
+							"protocol": "https",
+							"host": [
+								"imgs",
+								"xkcd",
+								"com"
+							],
+							"path": [
+								"comics",
+								"making_progress.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
