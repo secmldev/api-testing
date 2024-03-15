@@ -1,8 +1,9 @@
 {
 	"info": {
-		"_postman_id": "c5b46db9-5ddf-4100-a468-6cc194a6b538",
+		"_postman_id": "f86f586e-2658-4de6-b670-37fe5ad5725d",
 		"name": "Learning",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33294492"
 	},
 	"item": [
 		{
@@ -168,8 +169,50 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get image Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://imgs.xkcd.com/comics/making_progress.png",
+							"protocol": "https",
+							"host": [
+								"imgs",
+								"xkcd",
+								"com"
+							],
+							"path": [
+								"comics",
+								"making_progress.png"
+							]
+						}
+					},
+					"response": []
 				}
 			]
+		},
+		{
+			"name": "New Folder",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	]
 }
